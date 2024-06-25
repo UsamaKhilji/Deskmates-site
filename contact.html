@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <!-- favicon  -->
+        <link rel="shortcut icon" href="assets/images/fav-icon.svg" type="image/x-icon">
+        <!-- faremwork of css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+        <!-- style sheet of css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Responsive sheet of css -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- fonts awsome icon link  -->
+        <link rel="stylesheet" href="assets/font-awesome-lib/icon/font-awesome.min.css">
+        <!-- slick-slider link css -->
+        <link rel="stylesheet" href="assets/css/slick.min.css">
+        <!-- animation of css -->
+        <link rel="stylesheet" href="assets/css/aos.css">
+    </head>
+<body> 
+    <div class="site-wrapper">
+         <!-- ======== 1.1. header section ======== -->
+         <header>
+            <nav class="container navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- site logo -->
+                    <a class="nav-logo p-0" href="index.html"><img src="assets/images/logo.svg" alt="logo">
+                    </a>
+                            <!-- navigation button  -->
+                    <button class="open-aside" onclick="open_aside()" type="button">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <!-- navigation bar manu  -->
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul
+                            class="navbar-nav d-flex justify-content-center align-items-center gap-lg-4 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="spaces.html">Spaces</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link" href="#">Pages <i
+                                        class="fa-sharp fa-solid fa-sort-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                    <li><a class="dropdown-item active-color" href="contact.html">Contact</a></li>
+                                    <li><a class="dropdown-item" href="latestNews.html">Latest News</a></li>
+                                    <li><a class="dropdown-item" href="findSpace.html">Find a Space Near You</a></li>
+                                    <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                    <li><a class="dropdown-item" href="404.html">404</a></li>
+                                    <li><a class="dropdown-item" href="coming.html">Coming Soon</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="join-btn hover1" type="button">Join New</button>
+                </div>
+            </nav>
+            <!--===== aside navigation slidebar =====-->
+            <aside>
+                <div id="mySidenav" class="right-sidbar">
+                    <div class="side-nav-logo d-flex justify-content-between align-items-center ps-2 pe-1 nav-logo">
+                        <div class="navbar-brand"><a href="index.html"><img src="assets/images/logo.svg" alt="Logo"></a></div>
+                            <button class="fa-solid fa-xmark"
+                            onclick="close_aside()"> </button>
+                    </div>
+                    <ul>
+                        <li class="nav-item">
+                            <a aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="spaces.html">Spaces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="active-color">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-flex align-items-center justify-content-between " id="slid-btn">
+                                <button class="a-slid page-btn">Pages</button>
+                                <i class="fa-solid fa-caret-down pe-2"></i>
+                            </div>
+                            <ul id="slid-drop">
+                                <li><a href="findSpace.html">Find a Space Near</a></li>
+                                <li><a href="testimonials.html">Testimonials</a></li>
+                                <li><a href="latestNews.html">Latest News</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="404.html">404</a></li>
+                                <li><a href="coming.html">Coming Soon</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </header>
+        <!-- ======== End of 1.1. header section ========  -->
+         <!-- ======== 2.1. banner section ========  -->
+        <div class="banner contact_banner">
+            <div class="container">
+                <h2>GET IN TOUCH</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                    </ol>
+                  </nav>
+            </div>
+        </div>
+        <!-- ======== End of 2.1. banner section ========  -->
+        <!-- ======== 6.1. contact-form section ========  -->
+        <section class="contact-form">
+             <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 d-flex justify-content-center flex-column"  data-aos="fade-down">
+                        <h2>Contact Us</h2>
+                        <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <div class="d-flex gap-4">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h5>Location</h5>
+                                <p>Plaza X , XY Floor, XYZ Street, XYZ</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-4">
+                            <div><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h5>Email</h5>
+                                <p>yourname@email.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-4">
+                            <div><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>+123-456-7890</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6"  data-aos="fade-up">
+                        <div class="Message-form">
+                            <h4>LET'S TALK TO US</h4>
+                        <form  id="Subscribe-massage2">  
+                                <input type="text" name="name" id="name" autocomplete="on"  placeholder="Full Name" required>
+                                <input type="email" name="email" id="email" autocomplete="on" placeholder="Email Address" required>
+                                <input type="number" name="number" id="number" autocomplete="on" placeholder="Mobile Number" required>
+                                <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Message"></textarea>
+                           
+                            <div class="d-flex justify-content-center mt-4">
+                                <button class="hover2" type="submit">Submit</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    <div id="Succes-box2"></div>
+                </div>
+             </div>
+        </section>
+        <!-- ======== End of 6.1. contact-form section ========  -->
+        <!-- ======== 6.2. contact-map section ========  -->
+        <div class="contact-map">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12483.378419544404!2d-122.81628211814733!3d38.53735011234101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54d4a05c2a7a1305%3A0xdd32d79db479df08!2sRedwood%20Hwy%2C%20Windsor%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1701427470779!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" SameSite=None; Secure></iframe> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12483.378419544404!2d-122.81628211814733!3d38.53735011234101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54d4a05c2a7a1305%3A0xdd32d79db479df08!2sRedwood%20Hwy%2C%20Windsor%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1701427470779!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" samesite="None" secure></iframe>
+
+        </div>
+        <script>
+           
+
+        </script>
+        <!-- ======== End of 6.2. contact-map section ========  -->
+        <!-- ======== 1.15. footer section ========  -->
+        <footer>
+            <div class="container">
+                <div class="row pb-4">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <!-- footer logo -->
+                       <a href="index.html"><img src="assets/images/logo2.svg" alt="Logo"></a>
+                        <p>Lorem Ipsum is simply dummy text
+                            of the printing and typesetting 
+                            industry  when an unknown
+                            took a galley of type and.</p>
+                            <div class="d-flex flex-row gap-2">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                               <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <h5>Get in Touch</h5>
+                        <div class="d-flex flex-column gap-4">
+                            <div class="d-flex">
+                               <div><i class="fa-solid fa-location-dot"></i></div>
+                                <a href="#">8819 Ohio St. South Gate, CA 90280</a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                               <div><i class="fa-solid fa-envelope"></i></div>
+                                <a href="#">Ourstudio@hello.com</a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                               <div><i class="fa-solid fa-phone"></i></div>
+                                <a href="#">+1 386-688-3295</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                        <h5>Explore</h5>
+                        <ul class="d-flex flex-column gap-4">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="spaces.html">Spaces</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="latestNews.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                        <h5>Locations</h5>
+                        <ul class="d-flex flex-column gap-4">
+                            <li><a href="#">New York City</a></li>
+                            <li><a href="#">Atlanta</a></li>
+                            <li><a href="#">Chicago</a></li>
+                            <li><a href="#">Soho East</a></li>
+                            <li><a href="#">Los Angles</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                        <h5>Support</h5>
+                        <ul class="d-flex flex-column gap-4">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#"> Book A Tour</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright d-flex align-items-center justify-content-center container">
+                <p>Copyright © 2023 DeskMates By Evonicmedia.</p>
+            </div>
+        </footer>
+        <!-- ======== End of 1.15. footer section ========  -->
+    </div>
+
+     <!-- bootstrap min javascript -->
+     <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+     <!-- j Query -->
+     <script src="assets/js/jquery.js"></script>
+     <!-- slick slider js -->
+     <script src="assets/js/slick.min.js"></script>
+     <!-- main javascript -->
+     <script src="assets/js/custom.js"></script>
+     <!-- counter javascript file -->
+     <script src="assets/js/waypoints.min.js"></script>
+     <!-- animation from javascript -->
+     <script src="assets/js/aos.js"></script>
+     <script>
+         AOS.init({
+             once: true,
+             duration: 1500,
+         });
+         // Assuming you're using vanilla JavaScript
+document.cookie = "__Secure-YourCookieName=<value>; SameSite=None; Secure";
+
+    </script>
+</body>
+</html>

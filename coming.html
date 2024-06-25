@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coming</title>
+        <!-- favicon  -->
+        <link rel="shortcut icon" href="assets/images/fav-icon.svg" type="image/x-icon">
+        <!-- faremwork of css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+        <!-- style sheet of css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Responsive sheet of css -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- fonts awsome icon link  -->
+        <link rel="stylesheet" href="assets/font-awesome-lib/icon/font-awesome.min.css">
+        <!-- slick-slider link css -->
+        <link rel="stylesheet" href="assets/css/slick.min.css">
+        <!-- animation of css -->
+        <link rel="stylesheet" href="assets/css/aos.css">
+    </head>
+<body> 
+    <div class="site-wrapper">
+         <!-- ======== 12.1. coming section ========  -->
+        <section class="coming">
+                <div class="container">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                        <h2>We Are</h2>
+                        <h2 class="active-color">Coming Soon...</h2>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div><a href="index.html" class="hover2">Back To Home</a></div>
+                        <div id="countdown" class="countdown"></div>
+                        <div class="d-flex align-items-center justify-content-center mt-1">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div class="copyright d-flex align-items-center justify-content-center container">
+                            <p>Copyright © 2023 DeskMates By Evonicmedia.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+         <!-- ======== End of 12.1. coming section ========  -->
+    </div>
+
+     <!-- bootstrap min javascript -->
+     <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+     <!-- j Query -->
+     <script src="assets/js/jquery.js"></script>
+     <!-- slick slider js -->
+     <script src="assets/js/slick.min.js"></script>
+     <!-- counter javascript file -->
+     <script src="assets/js/waypoints.min.js"></script>
+     <!-- animation from javascript -->
+     <script src="assets/js/aos.js"></script>
+     <script>
+         AOS.init({
+             once: true,
+             duration: 1500,
+         });
+    </script>
+    <script>
+   const updateCountdown = () => {
+    let targetDate = localStorage.getItem('targetDate');
+    if (!targetDate) {
+        // If target date doesn't exist in local storage, calculate a new one
+        targetDate = new Date();
+         targetDate.setDate(targetDate.getDate() + 20); // Add 15 days
+         targetDate.setHours(targetDate.getHours() + 10); // Add 10 hours
+        targetDate.setMinutes(targetDate.getMinutes() + 24); // Add 24 minutes
+        targetDate.setSeconds(targetDate.getSeconds() + 15);
+       localStorage.setItem('targetDate', targetDate); 
+    } else {
+        // Parse the stored target date from local storage
+        targetDate = new Date(targetDate);
+    }
+    const countdownElement = document.getElementById("countdown");
+    const update = () => {
+        const currentDate = new Date();
+        const timeDifference = targetDate - currentDate;
+        if (timeDifference <= 0) {
+            countdownElement.innerHTML = "<h3 style='padding: 12px 0;'>Countdown expired</h3>";
+        } else {
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+            countdownElement.innerHTML = `
+                <div> <h3> ${days} </h3> <h6> Days </h6> </div>
+                <div> <h3> ${hours} </h3> <h6> Hours </h6> </div>
+                <div> <h3> ${minutes} </h3> <h6> Minutes </h6> </div>
+                <div> <h3> ${seconds} </h3> <h6> seconds </h6> </div>
+            `;
+        }
+    };
+    update(); // Initial call to display the countdown
+ setInterval(update, 1000); // Update every second
+};
+updateCountdown();
+    </script>
+</body>
+</html>

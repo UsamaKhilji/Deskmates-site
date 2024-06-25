@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pricing</title>
+        <!-- favicon  -->
+        <link rel="shortcut icon" href="assets/images/fav-icon.svg" type="image/x-icon">
+        <!-- faremwork of css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+        <!-- style sheet of css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Responsive sheet of css -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- fonts awsome icon link  -->
+        <link rel="stylesheet" href="assets/font-awesome-lib/icon/font-awesome.min.css">
+        <!-- slick-slider link css -->
+        <link rel="stylesheet" href="assets/css/slick.min.css">
+        <!-- animation of css -->
+        <link rel="stylesheet" href="assets/css/aos.css">
+    </head>
+<body> 
+    <div class="site-wrapper">
+         <!-- ======== 1.1. header section ======== -->
+         <header>
+            <nav class="container navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- site logo -->
+                    <a class="nav-logo p-0" href="index.html"><img src="assets/images/logo.svg" alt="logo">
+                    </a>
+                            <!-- navigation button  -->
+                    <button class="open-aside" onclick="open_aside()" type="button">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <!-- navigation bar manu  -->
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul
+                            class="navbar-nav d-flex justify-content-center align-items-center gap-lg-4 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="spaces.html">Spaces</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active-color" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link" href="#">Pages <i
+                                        class="fa-sharp fa-solid fa-sort-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                    <li><a class="dropdown-item" href="latestNews.html">Latest News</a></li>
+                                    <li><a class="dropdown-item" href="findSpace.html">Find a Space Near You</a></li>
+                                    <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                    <li><a class="dropdown-item" href="404.html">404</a></li>
+                                    <li><a class="dropdown-item" href="coming.html">Coming Soon</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="join-btn hover1" type="button">Join New</button>
+                </div>
+            </nav>
+            <!--===== aside navigation slidebar =====-->
+            <aside>
+                <div id="mySidenav" class="right-sidbar">
+                    <div class="side-nav-logo d-flex justify-content-between align-items-center ps-2 pe-1 nav-logo">
+                        <div class="navbar-brand"><a href="index.html"><img src="assets/images/logo.svg" alt="Logo"></a></div>
+                            <button class="fa-solid fa-xmark"
+                            onclick="close_aside()"> </button>
+                    </div>
+                    <ul>
+                        <li class="nav-item">
+                            <a aria-current="page"  href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="spaces.html">Spaces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-flex align-items-center justify-content-between " id="slid-btn">
+                                <button class="a-slid page-btn">Pages</button>
+                                <i class="fa-solid fa-caret-down pe-2"></i>
+                            </div>
+                            <ul id="slid-drop">
+                                <li><a href="findSpace.html">Find a Space Near</a></li>
+                                <li><a href="testimonials.html">Testimonials</a></li>
+                                <li><a href="latestNews.html">Latest News</a></li>
+                                <li><a href="pricing.html" class="active-color">Pricing</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="404.html">404</a></li>
+                                <li><a href="coming.html">Coming Soon</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </header>
+        <!-- ======== End of 1.1. header section ========  -->
+         <!-- ======== 2.1. banner section ========  -->
+        <div class="banner pricing_banner">
+            <div class="container">
+                <h2>PRICING TABLE</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Pricing</li>
+                    </ol>
+                  </nav>
+            </div>
+        </div>
+        <!-- ======== End of 2.1. banner section ========  -->
+        <!-- ======== 1.8. plan section ========  -->
+        <section class="plan pricing-plan">
+            <div class="plan-circle"></div>
+            <div class="plan-bg"></div>
+            <div class="container">
+                <h5 class="text-center h6-color">Pricing Plan</h5>
+                <h2 class="text-center">Choose Right <span class="active-color">Plan</span> For Space</h2>
+                <p class="text-center plan-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                <div class="row d-flex">
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-between" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                       <div class="plan-card planhover2 d-flex flex-column justify-content-between">
+                       <div>
+                        <h5>Starter</h5>
+                        <div class="d-flex gap-2 align-items-end justify-content-center"><h6>$</h6><h2>150/</h2><p>Per Month</p></div>
+                        <hr>
+                        <div class="d-flex flex-column plan-link">
+                        <span><i class="fa-regular fa-circle-dot"></i><span>Desk of your own</span></span>
+                        <span><i class="fa-regular fa-circle-dot"></i><span>Unlimited Coffee</span></span>
+                        <span><i class="fa-regular fa-circle-dot"></i><span>Transferable Membership</span></span>
+                        <span><i class="fa-regular fa-circle-dot"></i><span>24-hour Access</span></span>
+                        <span><i class="fa-regular fa-circle-dot"></i><span>Printing/Copying</span></span>
+                        </div>
+                    </div>
+                        <div><a href="#" class="hover2 d-flex justify-content-center">Get Started</a></div>
+                       </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 d-flex" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                        <div class="plan-card plan-hover about-plan d-flex flex-column justify-content-between" id="hhh">
+                            <div>
+                            <h5>Enterprise</h5>                         
+                            <div class="d-flex gap-2 align-items-end justify-content-center"><h6>$</h6><h2>1000/</h2><p>Per Month</p></div>
+                            <hr>
+                       
+                            <div class="d-flex flex-column plan-link">
+                            <span><i class="fa-regular fa-circle-dot"></i><span>Meeting Rooms</span></span>
+                            <span><i class="fa-regular fa-circle-dot"></i><span>Unlimited Coffee</span></span>
+                            <span><i class="fa-regular fa-circle-dot"></i><span>Transferable Membership</span></span>
+                            <span><i class="fa-regular fa-circle-dot"></i><span>Cleaning and Repairs</span></span>
+                            <span><i class="fa-regular fa-circle-dot"></i><span>Networking and Partnerships</span></span>
+                            </div>
+                             </div>
+                            <div><a href="#" class="hover2 d-flex justify-content-center">Get Started</a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 d-flex" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                        <div class="plan-card planhover2 d-flex flex-column justify-content-between">
+                           <div>
+                            <h5>Business</h5>
+                            <div class="d-flex gap-2 align-items-end justify-content-center"><h6>$</h6><h2>500/</h2><p>Per Month</p></div>
+                            <hr>
+                            <div class="d-flex flex-column plan-link">
+                            <span><i class="fa-regular fa-circle-dot"></i><span>Meeting Rooms</span></span>
+                             <span><i class="fa-regular fa-circle-dot"></i><span>Unlimited Coffee</span></span>
+                            <span><i class="fa-regular fa-circle-dot"></i><span>Transferable Membership</span></span>
+                            <span><i class="fa-regular fa-circle-dot"></i><span>Service Exchange</span></span>
+                            <span><i class="fa-regular fa-circle-dot"></i><span>Legal and Accounting Support</span></span>
+                            </div>
+                        </div>
+                            <div><a href="#" class="hover2 d-flex justify-content-center">Get Started</a></div>
+                           </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.8. plan section ========  -->
+         <!-- ======== 1.7. find section ========  -->
+         <section class="find pricing-find">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 d-flex flex-column align-items-md-start align-items-sm-center align-items-center" data-aos="fade-down">
+                        <h2>Come & Find Your Favourite <span>Place</span></h2>
+                        <p class="find-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <a href="#" class="hover1">Find More Features</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 position-relative">
+                       <div class="contact-email">
+                        <h4>BOOK YOUR TRIAL, IT'S FREE.</h4>
+                        <form id="Subscribe-massage2">  
+                            <div class="row justify-content-center gap-3">
+                                <input type="text" name="name" id="name" autocomplete="on" class="col-md-5 col-sm-12 col-12" placeholder="First Name" required>
+                                <input type="text" name="L-Name" id="email" autocomplete="on" class="col-md-5 col-sm-12 col-12" placeholder="Last Name" required>
+                                <input type="email" name="email" id="number" autocomplete="on" class="col-md-5 col-sm-12 col-12" placeholder="Email Address" required>
+                                <input type="number" name="number" id="subject" autocomplete="on" class="col-md-5 col-sm-12 col-12" placeholder="Phone Number" required>
+                                <textarea class="col-md-11 col-12" name="massage" id="massage" cols="30" rows="10" placeholder="Write here message"></textarea>
+                            </div>
+                            <div class="d-flex justify-content-center mt-4">
+                                <button class="e-btn hover2" type="submit">Book A Tour</button>
+                            </div>
+                        </form>
+                       </div>
+                    </div>
+                    <div id="Succes-box2"></div> 
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.7. find section ========  -->
+         <!-- ======== 1.11. customers section ========  -->
+         <section class="customers pricing-customers">
+            <div class="container">
+                <h5 class="text-center h6-color">Customers Trust</h5>
+                <h2>What <span class="active-color">People say</span> about us</h2>
+                <p class="customers-main-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                <div class="slider_customers" data-aos="zoom-in">
+                    <div class="customer d-flex align-items-center position-relative">
+                        <div class="customer-bg"><figure><img src="assets/images/pricing/customer.webp" alt="customer"></figure></div>
+                        <div>
+                            <p class="customer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only.</p>
+                            <div class="d-flex align-items-center justify-content-between detail">
+                                <div>
+                                    <div>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                    </div>
+                                    <h6>Henry Stevens</h6>
+                                    <p class="clr">Freelancer</p>
+                                </div>
+                                <div class="comma"><figure><img src="assets/images/icon/coma.svg" alt="comma"></figure></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="customer d-flex align-items-center position-relative">
+                        <div class="customer-bg"><figure><img src="assets/images/pricing/custmor2.webp" alt="customer"></figure></div>
+                        <div>
+                            <p class="customer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only.</p>
+                            <div class="d-flex align-items-center justify-content-between detail">
+                                <div>
+                                    <div>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                    </div>
+                                    <h6>Frank Hicks</h6>
+                                    <p class="clr">Freelancer</p>
+                                </div>
+                                <div class="comma"><figure><img src="assets/images/icon/coma.svg" alt="comma"></figure></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="customer d-flex align-items-center position-relative">
+                        <div class="customer-bg"><figure><img src="assets/images/pricing/custmor3.webp" alt="customer"></figure></div>
+                        <div>
+                            <p class="customer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only.</p>
+                            <div class="d-flex align-items-center justify-content-between detail">
+                                <div>
+                                    <div>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                    </div>
+                                    <h6>Judy Curtis</h6>
+                                    <p class="clr">Freelancer</p>
+                                </div>
+                                <div class="comma"><figure><img src="assets/images/icon/coma.svg" alt="comma"></figure></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.11. customers section ========  -->
+        <!-- ======== 1.15. footer section ========  -->
+        <footer>
+            <div class="container">
+                <div class="row pb-4">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <!-- footer logo -->
+                       <a href="index.html"><img src="assets/images/logo2.svg" alt="Logo"></a>
+                        <p>Lorem Ipsum is simply dummy text
+                            of the printing and typesetting 
+                            industry  when an unknown
+                            took a galley of type and.</p>
+                            <div class="d-flex flex-row gap-2">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                               <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <h5>Get in Touch</h5>
+                        <div class="d-flex flex-column gap-4">
+                            <div class="d-flex">
+                               <div><i class="fa-solid fa-location-dot"></i></div>
+                                <a href="#">8819 Ohio St. South Gate, CA 90280</a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                               <div><i class="fa-solid fa-envelope"></i></div>
+                                <a href="#">Ourstudio@hello.com</a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                               <div><i class="fa-solid fa-phone"></i></div>
+                                <a href="#">+1 386-688-3295</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                        <h5>Explore</h5>
+                        <ul class="d-flex flex-column gap-4">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="spaces.html">Spaces</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="latestNews.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                        <h5>Locations</h5>
+                        <ul class="d-flex flex-column gap-4">
+                            <li><a href="#">New York City</a></li>
+                            <li><a href="#">Atlanta</a></li>
+                            <li><a href="#">Chicago</a></li>
+                            <li><a href="#">Soho East</a></li>
+                            <li><a href="#">Los Angles</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                        <h5>Support</h5>
+                        <ul class="d-flex flex-column gap-4">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#"> Book A Tour</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright d-flex align-items-center justify-content-center container">
+                <p>Copyright © 2023 DeskMates By Evonicmedia.</p>
+            </div>
+        </footer>
+        <!-- ======== End of 1.15. footer section ========  -->
+    </div>
+
+     <!-- bootstrap min javascript -->
+     <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+     <!-- j Query -->
+     <script src="assets/js/jquery.js"></script>
+     <!-- slick slider js -->
+     <script src="assets/js/slick.min.js"></script>
+     <!-- main javascript -->
+     <script src="assets/js/custom.js"></script>
+     <!-- counter javascript file -->
+     <script src="assets/js/waypoints.min.js"></script>
+     <!-- animation from javascript -->
+     <script src="assets/js/aos.js"></script>
+     <script>
+         AOS.init({
+             once: true,
+             duration: 1500,
+         });
+    </script>
+</body>
+</html>
